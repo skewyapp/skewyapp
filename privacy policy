@@ -1,0 +1,11 @@
+Skewy uses the microphone (recorded) data to evaluate the general sound level and frequencies in the inaudible (17.8 to 20 kHz) range.
+The data is only recorded when Recorder function is turned on.
+
+Data, which is saved (in an SQLite database within the app, found in the Alarm tab):
+- Spectograms which are simple bitmaps consiting of 0s, 1s and 2s (no actual sound data)
+- Event when Skewy's recorder function is turned off.
+- Event when the measured sound drops below the alarm value.
+
+No other data is saved. No data is accessed, evaluated or relayed. No location information, no internet required. No advertising.
+
+All data can be deleted in the Alarms tab by pressing indididual entries. To delete all, press and hold any delete button for a short time.
