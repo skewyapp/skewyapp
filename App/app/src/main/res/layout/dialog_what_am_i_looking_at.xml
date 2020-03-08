@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="2dp"
+            android:background="@android:color/black" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:src="@drawable/detection_bar_1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layerType="software"
+            android:src="@drawable/dotted" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Indicates whether an alarm has been triggered. Highlights in red when inaudible signal is present. A new alarm will only be triggered and hence written to the database when the timer has reset. Inaudible signals can still be detected while timer is running. The main purpose is not to spam alarms." />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/black" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/specto_no_detection" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layerType="software"
+            android:src="@drawable/dotted" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Spectogram. X-Axis: frequencies from 17.8 to 20 kHz with increments of approx. 25 Hz. Y-Axis: time. The top time mark indicates the delay between present and arrival on screen. This is also the shortest possible signal detection. For example, if it is 0.6 s, only signals of 0.6 s or longer (of the same frequency) are detected. This length can be adjusted in the Settings. Seeing 'snow fall' is the usual picture when no inaudible frequencies are present. See Help section for further info." />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/black" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+           android:scaleType="fitXY"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/specto_detection" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layerType="software"
+            android:src="@drawable/dotted" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Spectogram where a signal has been detected (19.5 and 18 kHz). A detected signal is marked in red. Since signals are usually much louder than background noise, the 'snow fall' stops (see Help). Skewys main objective is to identify that there is AN inaudible signal and not the exact nature, thus parts of the signal may be suppressed. This happen especially when the number of signals is more than the setting of expected signals (see Settings and Help)." />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/black" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:src="@drawable/sensitivity_selection_1" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layerType="software"
+            android:src="@drawable/dotted" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Sensitivity of the signal detection. Predefined parameters for the threshold controller (see Help and Settings). Custom is automatically selected when sliders are used to adjust the sensitivity values or if controller parameters have been accessed through the settings menu." />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/black" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/sensitivity_selection_2" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layerType="software"
+            android:src="@drawable/dotted" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Sensitivity of the signal detection. Sliders can be used the adjust sensitivity (setting is where the lines intersect). The more white, the higher the sensitivity (more 'snow'/white in Spectogram). See Settings for more parameters, especially the Signal length. Sliders can be used to locate inaudible frequency sources: High sensitivity to identify their presence. Lower the sensitivity when moving closer to a possible source. If inaudible signal is still present with very low sensitivity, source might be close." />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/black" />
+
+
+    </LinearLayout>
+
+</ScrollView>

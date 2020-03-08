@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_view_alarm_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="00:00" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/image_view_graph_view_spectogram"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:layout_toEndOf="@id/text_view_timestamp_end"
+            android:src="@drawable/specto" />
+
+        <TextView
+            android:id="@+id/text_view_timestamp_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/image_view_graph_view_spectogram"
+            android:includeFontPadding="false"
+            android:text="12345" />
+
+        <TextView
+            android:id="@+id/text_view_timestamp_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="135dp"
+            android:includeFontPadding="false"
+            android:text="12345" />
+
+
+        <TextView
+            android:id="@+id/text_view_timestamp_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image_view_graph_view_spectogram"
+            android:layout_alignEnd="@id/text_view_timestamp_end"
+            android:includeFontPadding="false"
+            android:text="12345" />
+
+        <TextView
+            android:id="@+id/text_view_x_axis_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/image_view_graph_view_spectogram"
+            android:layout_below="@id/image_view_graph_view_spectogram"
+
+            android:text="17.8" />
+
+        <TextView
+            android:id="@+id/text_view_x_axis_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/image_view_graph_view_spectogram"
+            android:layout_below="@id/image_view_graph_view_spectogram"
+            android:layout_marginStart="135dp"
+            android:text="19" />
+
+        <TextView
+            android:id="@+id/text_view_x_axis_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/text_view_x_axis_end"
+            android:layout_below="@id/image_view_graph_view_spectogram"
+            android:layout_marginEnd="50dp"
+            android:text="kHz" />
+
+
+        <TextView
+            android:id="@+id/text_view_x_axis_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/image_view_graph_view_spectogram"
+            android:layout_below="@id/image_view_graph_view_spectogram"
+            android:text="20" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

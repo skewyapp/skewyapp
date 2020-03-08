@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="2dp"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1) Turn on recorder (For clear results, try it first time in a quiet place)." />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/quiet_room" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layerType="software"
+            android:src="@drawable/dotted" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="This is roughly what you will measure in a quiet room. Note that the measured level strongly depends on your microphone quality." />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="2dp"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2) Speak to the phone, have a normal conversation." />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/normal_speech" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layerType="software"
+            android:src="@drawable/dotted" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="This is roughly what you will measure when you speak into the phone or have a normal to loud conversation. As you can see, the curve represents your speech. Meaning the microphone data can be evaluated to gain information about what was spoken. " />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="2dp"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3) Now Skewy comes into play. Turn on Play and increase the volume until the measured level is roughly equal the highest peaks you measured when talking." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Note that Skewy works best with an attached speaker. See section Use a speaker. This focuses the sound onto the microphone, allowing to acheive same results while being much more quiet to the surroundings." />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/music_on" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layerType="software"
+            android:src="@drawable/dotted" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Skewy is now playing (without a speaker) at a volume of 5 (setting strongly phone dependent). The microphone picks up sound louder than when I spoke. When you talk now, you will not cause any more peaks meaning the curve does not 'follow' your speech any more. Now it will be hard to extract what was spoken from the microphone data." />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="2dp"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4) Set alarm level. This is only used to communicate with the user when the sound level does not mask the desired level any more (in our case normal speech)." />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/alarm_set" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layerType="software"
+            android:src="@drawable/dotted" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="When the sound drops below the level, Skewy will notify the user: indicating that the desired sound level is no longer (completely) masked. Of course this is not necessary and Skewy can be checked by ear. However this also indicates when 'something else' turns off the sound for longer than 5 seconds."/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="2dp"
+            android:background="@android:color/black" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See Signal detection in Help for more info." />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_view_settings_offset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Threshold offset"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/text_view_settings_offset_description"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_view_settings_offset"
+                android:layout_alignStart="@id/text_view_settings_offset"
+                android:layout_marginTop="5dp"
+                android:text="Offset on threshold level to qualify a detection. (0,30)." />
+
+            <EditText
+                android:id="@+id/edit_text_settings_threshold_offset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:inputType="numberDecimal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/text_view_settings_offset_description"
+                android:layout_marginTop="2dp"
+                android:background="@android:color/black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_view_settings_amplifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Threshold amplifier"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/text_view_settings_amplifier_description"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_view_settings_amplifier"
+                android:layout_marginTop="5dp"
+                android:text="Increase of threshold for every yes-detection. (0.01,0.3)." />
+
+            <EditText
+                android:id="@+id/edit_text_settings_threshold_amplifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:inputType="numberDecimal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/text_view_settings_amplifier_description"
+                android:layout_marginTop="2dp"
+                android:background="@android:color/black" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_view_settings_attenuator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Threshold attenuator"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/text_view_settings_attenuator_description"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_view_settings_attenuator"
+                android:layout_marginTop="5dp"
+                android:text="Decrease of threshold for every no-detection. (0.01,0.3)." />
+
+            <EditText
+                android:id="@+id/edit_text_settings_threshold_attenuator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:inputType="numberDecimal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/text_view_settings_attenuator_description"
+                android:layout_marginTop="2dp"
+                android:background="@android:color/black" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_view_settings_expected_signals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Expected signals"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/text_view_settings_expected_signals_description"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_view_settings_expected_signals"
+                android:layout_marginTop="5dp"
+                android:text="Expected number of signals present at a time. (1,8)." />
+
+            <EditText
+                android:id="@+id/edit_text_settings_expected_signals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:inputType="number" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/text_view_settings_expected_signals_description"
+                android:layout_marginTop="2dp"
+                android:background="@android:color/black" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_view_settings_detection_buffer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Signal length"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/text_view_settings_detection_buffer_description"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_view_settings_detection_buffer"
+                android:layout_marginTop="5dp"
+                android:text="How many samples of consecutive yes-detections qualify a signal." />
+
+            <TextView
+                android:id="@+id/text_view_settings_detection_buffer_description_2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_view_settings_detection_buffer_description"
+                android:text="Determines the shortest possible detection length. The input here is ticks, not time (seconds). (5,30)." />
+
+            <EditText
+                android:id="@+id/edit_text_settings_detection_buffer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:inputType="number" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/text_view_settings_detection_buffer_description_2"
+                android:layout_marginTop="2dp"
+                android:background="@android:color/black" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

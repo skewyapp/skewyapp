@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme.SkewyFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="hans.b.skewy1_0.ui.main.SpectrumFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp">
+
+
+        <TextView
+            android:id="@+id/text_view_frequency_alarm_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:text="No detection. Reset in " />
+
+        <TextView
+            android:id="@+id/text_view_frequency_alarm_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="01:00" />
+
+
+        <ImageView
+            android:id="@+id/image_view_edit_spectogram_parameter"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_edit_black_24dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_spectorgram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_view_spectogram_timestamp_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/imageViewSpectogramSet2"
+                android:layout_toStartOf="@id/imageViewSpectogramSet2"
+                android:includeFontPadding="false"
+                android:text="0.6 s" />
+
+            <TextView
+                android:id="@+id/text_view_spectogram_timestamp_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/text_view_spectogram_timestamp_0"
+                android:layout_marginTop="92dp"
+                android:includeFontPadding="false"
+                android:text="2.2" />
+
+            <TextView
+                android:id="@+id/text_view_spectogram_timestamp_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/text_view_spectogram_timestamp_0"
+                android:layout_alignBottom="@id/imageViewSpectogramSet2"
+                android:includeFontPadding="false"
+                android:text="4.6" />
+
+
+            <ImageView
+                android:id="@+id/imageViewSpectogramSet2"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/specto" />
+
+
+            <TextView
+                android:id="@+id/text_view_frequency_set_2_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewSpectogramSet2"
+                android:layout_alignStart="@id/imageViewSpectogramSet2"
+                android:text="17.8" />
+
+            <TextView
+                android:id="@+id/text_view_frequency_set_2_19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewSpectogramSet2"
+                android:layout_centerInParent="true"
+                android:text="19" />
+
+            <TextView
+                android:id="@+id/text_view_frequency_set_2_kHz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewSpectogramSet2"
+                android:layout_toEndOf="@id/text_view_frequency_set_2_19"
+                android:layout_marginStart="50dp"
+                android:text="kHz" />
+
+            <TextView
+                android:id="@+id/text_view_frequency_set_2_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewSpectogramSet2"
+                android:layout_alignEnd="@id/imageViewSpectogramSet2"
+                android:text="20" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_sensitivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_layout_spectorgram">
+
+            <RadioGroup
+                android:id="@+id/radio_group_sensitivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_button_sensitivity_low"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Low" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_sensitivity_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medium" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_sensitivity_high"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="-20dp"
+                    android:gravity="center"
+                    android:text="High" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_sensitivity_custom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="-20dp"
+                    android:gravity="center"
+                    android:text="Custom" />
+
+
+            </RadioGroup>
+
+
+            <ImageView
+                android:id="@+id/image_view_sensitivity"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/radio_group_sensitivity"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_toStartOf="@id/button_test_tone"
+                android:background="@drawable/image_view_sensitivity" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_sensitivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/image_view_sensitivity"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="35dp"
+                android:orientation="vertical"
+                android:rotation="270">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_view_seekbar_y_axis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:rotation="0"
+                        android:text="Expected signals" />
+
+                    <TextView
+                        android:id="@+id/text_view_seekbar_detection_buffer_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:includeFontPadding="false"
+                        android:rotation="0"
+                        android:text="1" />
+
+
+                </LinearLayout>
+
+                <SeekBar
+                    android:id="@+id/seekbar_detection_buffer_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="100dp"
+                    android:rotation="0" />
+
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/seekbar_threshold_attenuator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_view_sensitivity"
+                android:layout_alignStart="@id/image_view_sensitivity"
+                android:layout_marginStart="-15dp"
+                android:layout_marginTop="10dp"
+                android:minWidth="100dp"
+                android:rotation="0" />
+
+            <TextView
+                android:id="@+id/text_view_seekbar_x_axis_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seekbar_threshold_attenuator"
+                android:layout_alignStart="@id/seekbar_threshold_attenuator"
+                android:layout_marginStart="10dp"
+                android:text="Amplification" />
+
+
+            <TextView
+                android:id="@+id/text_view_seekbar_attenuator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/text_view_seekbar_x_axis_description"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/text_view_seekbar_x_axis_description"
+                android:text="0.01" />
+
+
+         <Button
+             android:id="@+id/button_test_tone"
+             android:layout_width="95dp"
+             android:layout_height="55dp"
+             android:layout_alignTop="@id/image_view_sensitivity"
+             android:layout_alignEnd="@id/radio_group_sensitivity"
+             android:minWidth="0dp"
+             android:minHeight="0dp"
+             android:text="Play test tone"
+             android:textAllCaps="false"
+             android:textStyle="normal"/>
+
+
+            <Button
+                android:id="@+id/button_whatAmILookingAt"
+                android:layout_width="95dp"
+                android:layout_height="55dp"
+                android:layout_alignStart="@+id/button_test_tone"
+                android:layout_alignBottom="@id/image_view_sensitivity"
+                android:text="What is all this ?"
+                android:textAllCaps="false"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

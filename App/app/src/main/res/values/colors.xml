@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#424242</color>
+    <color name="colorPrimaryDark">#2E2E2E</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorUIgrey">#5f666b</color>
+    <color name="colorLightGreen">#90EE90</color>
+    <color name="colorLightRed">#FF4040</color>
+    <color name="colorSensitivityRed">#802020</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorHoloBlue">#1dade2</color>
+    <color name="colorBlack">#000000</color>
+
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/about_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="by Hans Albers. Developed in my free time. No commercial support or intent." />
+
+        <TextView
+            android:id="@+id/about_text_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ever had the feeling that your phone is listening to you ? If your phone is listening to you, Skewy can make this difficult by skewing/masking your voice. If used right, eavesdropping will not be easy."
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Ever thought that your phone is accessed without you noticing ? Technologies such as Silverpush are using the inaudible frequency range to exchange
+information with your phone. This is a threat to your privacy. (Reference: Arp et al. (2017): Privacy Threats through
+Ultrasonic Side Channels on Mobile Devices, TU Braunschweig). Skewy tries to identify such signals. Upon detection
+Skewy can emit a signal in the inaudible frequency range, trying to distort the unwanted signal. "
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/about_text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skewy tries to make eavesdropping and unwanted access of you phone difficult. However there is no guarantee in any case."
+            android:layout_marginTop="15dp"/>
+
+
+        <TextView
+            android:id="@+id/about_text_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If you find bugs, have suggestions or even want to help developing this App, please contact: skewyapp@gmail.com"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/about_text_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reference of sound mix: 1) Bob Roberts - Why don't you write, 2) Vocal Quartet - Waltz me around again, 3) Girl with sound recorder - Restaurant in Medina. 1, 2: www.freesound.org, 3: www.freemusicarchive.org. Licence = Creative Commons CC"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reference of logo: own work"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/about_text_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Copyright (c) Hans Albers 2020." />
+
+    </LinearLayout>
+</ScrollView>

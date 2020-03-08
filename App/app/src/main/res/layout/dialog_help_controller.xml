@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To evaluate high frequency signals, Skewy uses a threshold controller. It sets the level of the threshold which determines whether a frequency exsists or not. The aim is not an accurate signal detection, just that there is a source emitting an inaudible frequency." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skewy evaluates the amplitudes in the inaudible frequency range of approximately 17.8 to 20 kHz. The interval is roughly every 25 Hz. Meaning the evaluation occurs at 17800, 17825, …, 18000, 18025, 18050, …, 20000 Hz. These are the frequency bins." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skewy’s threshold controller has several input parameters which define, how the controller sets the threshold level. Important: if an amplitude exceeds the threshold, it is regarded as a possible detection (yes-detection). If the amplitude is below the threshold, it is no detection (no-detection)." />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Offset - "
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="numerical offset on top of the threshold level for qualifying a yes-detection" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amplifier - "
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="factor by how much the threshold is increased if the yes-detections are less than the number of expected signals." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attenuator - "
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="factor by how much the threshold is lowered if the yes-detections exceed the number of expected signals." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expected signals - "
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="assumption of how many high frequency signals can be present at one point in time." />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Signal length - "
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How many consecutive yes-detections of the same frequency bin are required to qualify a true existing signal." />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Example: the freuqncies are evaluated at 18, 18.5, 19, 19.5 and 20 kHz. The number of expected signals is one. To relate this to the spectrogram, think of the spectrogram as a birds-eye view of the following figures where the threshold level is a moving floor, masking every bin below it." />
+
+        <ImageView
+            android:id="@+id/image_view_help_controller_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Showing the amplitudes and the threshold level (red line). The level is higher than all the amplitudes, thus there are five no-detections. You would see a black screen and the controller would decrease the level."/>
+
+        <ImageView
+            android:id="@+id/image_view_help_controller_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The level is now lower than all amplitudes, meaning there are five yes-detections, since the expected number of signals is one, the level would be increased. You would see 5 white dots (horizontal)."/>
+
+        <ImageView
+            android:id="@+id/image_view_help_controller_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="One signal is above the level, as the controller expects and the threshold level remains. If this occurs as often as defined by the signal length, Skewy regards those consecutive detections as a signal. You would see a red line (vertical)." />
+
+    </LinearLayout>
+
+</ScrollView>

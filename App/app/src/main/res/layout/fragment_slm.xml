@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme.SkewyFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="hans.b.skewy1_0.ui.main.SlmFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="0dp">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutAlarmTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/text_view_yScale_db"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="10dp"
+                android:includeFontPadding="false"
+                android:text="dB" />
+
+            <TextView
+                android:id="@+id/text_view_soundAlarmState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text="Sound alarm not triggered. Reset in " />
+
+            <TextView
+                android:id="@+id/text_view_soundAlarmTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01:00" />
+
+            <ImageView
+                android:id="@+id/image_view_editSlmParameters"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/ic_edit_black_24dp" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_sound_graph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_view_sound_graph"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorBlack"
+                android:rotation="180" />
+
+            <ImageView
+                android:id="@+id/image_view_yscale_sound_graph"
+                android:layout_width="5dp"
+                android:layout_height="200dp"
+                android:layout_alignLeft="@id/image_view_sound_graph"
+                android:layout_alignTop="@id/image_view_sound_graph" />
+
+            <ImageView
+                android:id="@+id/image_view_xscale_sound_graph"
+                android:layout_width="300dp"
+                android:layout_height="5dp"
+                android:layout_alignStart="@id/image_view_sound_graph"
+                android:layout_alignBottom="@id/image_view_sound_graph" />
+
+            <TextView
+                android:id="@+id/text_view_yScale_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/image_view_sound_graph"
+                android:layout_toStartOf="@id/image_view_sound_graph"
+                android:includeFontPadding="false"
+                android:text="100" />
+
+            <TextView
+                android:id="@+id/text_view_yScale_80"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_yScale_100"
+                android:layout_alignEnd="@id/text_view_yScale_100"
+                android:layout_marginTop="17dp"
+                android:includeFontPadding="false"
+                android:text="80" />
+
+            <TextView
+                android:id="@+id/text_view_yScale_60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_yScale_100"
+                android:layout_alignEnd="@id/text_view_yScale_100"
+                android:layout_marginTop="55dp"
+                android:includeFontPadding="false"
+                android:text="60" />
+
+            <TextView
+                android:id="@+id/text_view_yScale_40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_yScale_100"
+                android:layout_alignEnd="@id/text_view_yScale_100"
+                android:layout_marginTop="96dp"
+                android:includeFontPadding="false"
+                android:text="40" />
+
+            <TextView
+                android:id="@+id/text_view_yScale_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_yScale_100"
+                android:layout_alignEnd="@id/text_view_yScale_100"
+                android:layout_marginTop="135dp"
+                android:includeFontPadding="false"
+                android:text="20" />
+
+            <TextView
+                android:id="@+id/text_view_yScale_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_yScale_100"
+                android:layout_alignEnd="@id/text_view_yScale_100"
+                android:layout_marginTop="170dp"
+                android:includeFontPadding="false"
+                android:text="0" />
+
+
+            <TextView
+                android:id="@+id/text_view_xScale_time0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_view_xscale_sound_graph"
+                android:layout_alignEnd="@+id/image_view_xscale_sound_graph"
+                android:text="0 s" />
+
+            <TextView
+                android:id="@+id/text_view_xScale_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_view_xscale_sound_graph"
+                android:layout_centerInParent="true"
+                android:text="00" />
+
+            <TextView
+                android:id="@+id/text_view_xScale_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_view_xscale_sound_graph"
+                android:layout_alignStart="@id/image_view_sound_graph"
+                android:text="00" />
+
+
+            <TextView
+                android:id="@+id/text_view_auto_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_view_xScale_time2"
+                android:layout_alignStart="@id/image_view_sound_graph"
+                android:layout_marginTop="10dp"
+                android:text="Auto-Setup" />
+
+            <Switch
+                android:id="@+id/switch_auto_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_view_auto_mode"
+                android:layout_alignStart="@id/text_view_auto_mode"
+                android:layout_toEndOf="@id/text_view_auto_mode" />
+
+            <TextView
+                android:id="@+id/text_view_auto_mode_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_view_auto_mode"
+                android:layout_alignStart="@id/text_view_auto_mode"
+                android:layout_marginTop="35dp"
+                android:text="off" />
+
+            <Button
+                android:id="@+id/button_how_to_use_slm"
+                android:layout_width="95dp"
+                android:layout_height="55dp"
+                android:layout_alignStart="@+id/switch_auto_mode"
+                android:layout_below="@id/text_view_auto_mode_state"
+                android:layout_marginTop="5dp"
+                android:text="How to use this ?"
+                android:textAllCaps="false"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/text_view_alarm_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/text_view_auto_mode"
+                android:layout_alignEnd="@+id/image_view_sound_graph"
+                android:text="Alarm level" />
+
+            <NumberPicker
+                android:id="@+id/edit_sound_alarm_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_view_alarm_value"
+                android:layout_alignEnd="@id/text_view_alarm_value" />
+
+            <TextView
+                android:id="@+id/text_view_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/edit_volume"
+                android:layout_alignTop="@+id/text_view_auto_mode"
+                android:text="Volume" />
+
+            <NumberPicker
+                android:id="@+id/edit_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_view_volume"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@id/edit_sound_alarm_value" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_view_alarm_trigger_5_seconds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Alarm trigger and reset have a 5 second delay." />
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

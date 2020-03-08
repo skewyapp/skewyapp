@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/main_menu_about"
+        android:orderInCategory="1"
+        android:title="About"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/main_menu_help"
+        android:orderInCategory="1"
+        android:title="Help"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/sub_menu_general_help"
+                android:title="General"/>
+
+            <item
+                android:id="@+id/sub_menu_signal_detection"
+                android:title="Signal detection"/>
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/main_menu_settings"
+        android:orderInCategory="1"
+        android:title="Settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/main_menu_speaker"
+        android:orderInCategory="1"
+        android:title="Use a speaker"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/main_menu_privacy"
+        android:orderInCategory="1"
+        android:title="Privacy policy and data"
+        app:showAsAction="never"/>
+
+
+</menu>

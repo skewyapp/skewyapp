@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_operation"
+    style="@style/AppTheme.SkewyFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="hans.b.skewy1_0.ui.main.FragmentOperation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_view_operation_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Warning: Do not use Skewy with headphones in ear."
+            android:textColor="@color/colorLightRed" />
+
+        <TextView
+            android:id="@+id/text_view_operation_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/text_view_operation_warning"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="120dp"
+            android:text="@string/operations_play" />
+
+        <Switch
+            android:id="@+id/switch_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/text_view_operation_play"
+            android:layout_toEndOf="@+id/text_view_operation_play" />
+
+        <TextView
+            android:id="@+id/text_view_operation_recorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_operation_play"
+            android:layout_alignStart="@+id/text_view_operation_play"
+            android:layout_marginTop="30dp"
+            android:text="@string/operations_recorder" />
+
+        <Switch
+            android:id="@+id/switch_recorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/switch_play"
+            android:layout_alignTop="@id/text_view_operation_recorder" />
+
+        <TextView
+            android:id="@+id/text_view_operation_shield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_operation_recorder"
+            android:layout_alignStart="@+id/text_view_operation_recorder"
+            android:layout_marginTop="30dp"
+            android:text="Frequency shield" />
+
+        <Switch
+            android:id="@+id/switch_shield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/switch_play"
+            android:layout_alignTop="@id/text_view_operation_shield" />
+
+        <TextView
+            android:id="@+id/text_view_operation_status_reading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_operation_shield"
+            android:layout_alignStart="@+id/text_view_operation_shield"
+            android:layout_marginTop="30dp"
+            android:text="Last reading" />
+
+        <TextView
+            android:id="@+id/textView_recodervalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/switch_play"
+            android:layout_alignBottom="@+id/text_view_operation_status_reading"
+            android:text="0 dB" />
+
+        <TextView
+            android:id="@+id/textView_noiseLevelDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/text_view_operation_status_reading"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/textView_recodervalue"
+            android:text="Recorder off" />
+
+        <TextView
+            android:id="@+id/text_view_operation_what"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_operation_status_reading"
+            android:layout_alignStart="@+id/text_view_operation_shield"
+            android:layout_marginTop="15dp"
+            android:text="With pressing Play you will be able to mask your speech with the played sound. Enable Recorder for full functionality, alarming and frequency identification." />
+
+        <TextView
+            android:id="@+id/text_view_operation_beta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_operation_what"
+            android:layout_alignStart="@+id/text_view_operation_shield"
+            android:layout_marginTop="10dp"
+            android:text="This version is a beta." />
+
+        <TextView
+            android:id="@+id/text_view_operation_status_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_operation_beta"
+            android:layout_alignStart="@+id/text_view_operation_shield"
+            android:layout_marginTop="10dp"
+            android:text="Volume needs to be at least 1." />
+
+        <TextView
+            android:id="@+id/text_view_operation_status_db"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_operation_status_volume"
+            android:layout_alignStart="@+id/text_view_operation_shield"
+            android:layout_marginTop="10dp"
+            android:text="Sound level is uncalibrated dB, not dB(A)." />
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

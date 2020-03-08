@@ -1,0 +1,36 @@
+<resources>
+    // General
+    <string name="app_name">Skewy</string>
+
+    // Tab layout
+    <string name="tab_text_1">Operation</string>
+    <string name="tab_text_2">Alarms</string>
+    <string name="tab_text_3">Sound</string>
+    <string name="tab_text_4">Frequency</string>
+
+
+
+    // Operations
+    <string name="operations_play">Play</string>
+    <string name="operations_recorder">Recorder</string>
+    <string name="operations_frequency_detection">Frequency detection</string>
+    <string name="operations_alarms">Alarms</string>
+
+
+    // +++ SERVICE RECORDER +++ //
+    <string name="recording">Recording</string>
+    <string name="start_recording">Skewy: Recording…</string>
+    <string name="stop_recording">Skewy: Recording stopped.</string>
+
+    // Noise level description
+    <string name="noiseLevel_80">Loud engine</string>
+    <string name="noiseLevel_70">Loud traffic</string>
+    <string name="noiseLevel_60">Noisy restaurant</string>
+    <string name="noiseLevel_50">Normal conversation</string>
+    <string name="noiseLevel_40">Calm park, library</string>
+    <string name="noiseLevel_30">Whispering, quiet room</string>
+    <string name="noiseLevel_20">Mosquito</string>
+    <string name="noiseLevel_10">Breathing</string>
+
+
+</resources>
