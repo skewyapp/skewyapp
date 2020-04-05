@@ -16,5 +16,4 @@ No actual sound data is saved.
 
 With the live graphs and live sensitivity adjustments, Skewy can be used to locate inaudible frequency sources. This can range from an ultrasonic beacon to electronic equipment.
 
-*Reference: Arp et al. 2017: Privacy Threats through Ultrasonic side Channels on Mobile Devices, TU Braunschweig). Skewy tries to identify such signals and distort them to prevent unwanted information exchange.
-
+*Reference: Arp et al. 2017: Privacy Threats through Ultrasonic side Channels on Mobile Devices, TU Braunschweig.
