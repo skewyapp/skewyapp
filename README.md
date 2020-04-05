@@ -1,5 +1,7 @@
 # skewy1-0
 
+Released on F-Droid and Google Play: Skewy - anti eavesdropping.
+
 Ever had the feeling that your phone is listening to you ?
 Skewy is an idea how to make eavesdropping hard - with a simple approach: masking your speech with sound. This approach is hard to bypass since you will always be aware (hear) when the masking no longer occurs.
 
