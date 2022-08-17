@@ -20,7 +20,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:text="Warning: Do not use Skewy with headphones in ear."
-            android:textColor="@color/colorLightRed" />
+            android:textColor="#FF8F8F" />
 
         <TextView
             android:id="@+id/text_view_operation_play"
