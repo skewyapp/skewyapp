@@ -27,7 +27,7 @@ This is the expected range from the technical literature for the ultrasonic sign
 5.	Can I test the ultrasonic detection?
 
 An online tone generator can be used (for example https://onlinetonegenerator.com/).
-More dedicated can be done with test files from: https://github.com/MAVProxyUser/SilverPushUnmasked . They are also referenced in https://github.com/skewyapp/skewy1-0/issues/14 .
+More dedicated tests can be done with files from: https://github.com/MAVProxyUser/SilverPushUnmasked . They are also referenced in https://github.com/skewyapp/skewy1-0/issues/14 .
 
 6.	How often is an ultrasonic jamming signal emitted?
 
