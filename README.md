@@ -18,7 +18,7 @@ To be able to decipher, the full signal would have to be recorded. In this case 
 
 3.	Is every detection a signal?
 
-No. For example electronic equipment such as speakers and induction cooktops can emit in evaluated range of 17.8 – 20 kHz.
+No. For example electronic equipment such as induction cooktops can emit in the evaluated range of 17.8 – 20 kHz.
 
 4.	Why 17.8 to 20 kHz?
 
