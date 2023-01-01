@@ -34,6 +34,7 @@ More dedicated can be done with test files from: https://github.com/MAVProxyUser
 Once per alarm. Meaning it is not emitted when the alarm timer is counting down. The shortest possible interval is 15 seconds. The jamming signal lasts approx. 8 seconds.
 
 7.	Which processing algorithm is used?
+
 The Goertzel algorithm. It was chosen over a Fast Fourier Transform (FFT), as it more light-weight, to minimize the drain of resources (battery and processing). Skewy concentrates on whether there is an ultrasonic frequency present – not the exact nature of it (see 2.).
 
 # References:
