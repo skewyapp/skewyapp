@@ -37,7 +37,7 @@ Once per alarm. Meaning it is not emitted when the alarm timer is counting down.
 The Goertzel algorithm. It was chosen over a Fast Fourier Transform (FFT), as it more light-weight, to minimize the drain of resources (battery and processing). Skewy concentrates on whether there is an ultrasonic frequency present – not the exact nature of it (see 2.).
 
 # References:
-* Arp et al. 2017: Privacy Threats through Ultrasonic side Channels on Mobile Devices, TU Braunschweig.
+* Arp et al. 2017: Privacy Threats through Ultrasonic side Channels on Mobile Devices, TU Braunschweig. (https://www.sec.tu-bs.de/pubs/2017a-eurosp.pdf)
 * https://en.wikipedia.org/wiki/SilverPush
 * https://www.comparitech.com/blog/information-security/block-ultrasonic-tracking-apps/
 * https://github.com/MAVProxyUser/SilverPushUnmasked
