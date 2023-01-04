@@ -5,23 +5,23 @@
     <item
         android:id="@+id/main_menu_about"
         android:orderInCategory="1"
-        android:title="About"
+        android:title="О приложении"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/main_menu_help"
         android:orderInCategory="1"
-        android:title="Help"
+        android:title="Помощь"
         app:showAsAction="never">
 
         <menu>
             <item
                 android:id="@+id/sub_menu_general_help"
-                android:title="General"/>
+                android:title="Общее"/>
 
             <item
                 android:id="@+id/sub_menu_signal_detection"
-                android:title="Signal detection"/>
+                android:title="Обнаружен сигнал"/>
         </menu>
 
     </item>
@@ -29,20 +29,20 @@
     <item
         android:id="@+id/main_menu_settings"
         android:orderInCategory="1"
-        android:title="Settings"
-        app:showAsAction="never" />
+        android:title="Настройки"
+        app:showAsAction="никогда" />
 
     <item
         android:id="@+id/main_menu_speaker"
         android:orderInCategory="1"
-        android:title="Use a speaker"
-        app:showAsAction="never" />
+        android:title="Использовать динамик"
+        app:showAsAction="никогда" />
 
     <item
         android:id="@+id/main_menu_privacy"
         android:orderInCategory="1"
-        android:title="Privacy policy and data"
-        app:showAsAction="never"/>
+        android:title="Политика конфиденциальности и данные"
+        app:showAsAction="никогда"/>
 
 
 </menu>
