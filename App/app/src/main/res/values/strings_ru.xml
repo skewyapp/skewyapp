@@ -1,0 +1,36 @@
+<resources>
+    // General
+    <string name="app_name">Skewy</string>
+
+    // Tab layout
+    <string name="tab_text_1">Действие</string>
+    <string name="tab_text_2">События</string>
+    <string name="tab_text_3">Звук</string>
+    <string name="tab_text_4">Частота</string>
+
+
+
+    // Operations
+    <string name="operations_play">Воспроизведение</string>
+    <string name="operations_recorder">Рекордер</string>
+    <string name="operations_frequency_detection">Обнаружение частоты</string>
+    <string name="operations_alarms">События</string>
+
+
+    // +++ SERVICE RECORDER +++ //
+    <string name="recording">Запись</string>
+    <string name="start_recording">Skewy: Запись…</string>
+    <string name="stop_recording">Skewy: Запись остановлена.</string>
+
+    // Noise level description
+    <string name="noiseLevel_80">Громкий двигатель</string>
+    <string name="noiseLevel_70">Громкий трафик</string>
+    <string name="noiseLevel_60">Шумный ресторан</string>
+    <string name="noiseLevel_50">Обычная беседа</string>
+    <string name="noiseLevel_40">Тихий парк, библиотека</string>
+    <string name="noiseLevel_30">Шепот, тихая комната</string>
+    <string name="noiseLevel_20">Комар</string>
+    <string name="noiseLevel_10">Дыхание</string>
+
+
+</resources>
