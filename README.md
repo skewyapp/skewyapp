@@ -10,7 +10,7 @@ No actual sound data is saved. With the live graphs and live sensitivity adjustm
 
 1.	Why do you not just block the microphone?
 
-Blocking the microphone is just a software setting. Every software setting can be overwritten by the operating system. 
+Blocking the microphone is just a software setting. Software settings can be overwritten by the operating system. 
 
 2.	Can Skewy decipher ultrasonic signals (who sent the signal)?
 
